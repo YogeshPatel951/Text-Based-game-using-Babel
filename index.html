@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>ECMA</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgb(100, 0, 0, 0.3);
+            border-radius: 20px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(255, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(255, 0, 0, 1);
+        }
+
+
+        .board {
+            min-width: 50%;
+            border: none;
+            border-radius: 20px;
+            height: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            overflow-y: scroll;
+            line-height: 20px;
+            padding: 10px;
+            margin: 10px;
+            
+
+        }
+
+        body {
+            font-family: sans-serif;
+            background-image: linear-gradient(to right, #9795f0 0%, #fbc8d4 100%);
+            
+        }
+
+        .container {
+            padding-top: 0px;
+
+        }
+        button:hover{
+            
+            opacity: 0.5;
+            
+        }
+        #board{
+            line-height: 30px;
+            
+        }
+        h1{
+            color: white;
+            font-size: 60px;
+            text-shadow: 0px 8px 20px rgba(0,0,0,0.8);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1 align="center">TEXT GAME</h1>
+    <div class="container">
+        <div class="board" ><span id="board"></span></div>
+        <div style="text-align: center; font-weight: bold">Please Select a Treasure File : <input type="file" id="files" multiple></div>
+        <div style="border: 1px solid white; padding: 20px;margin: 10px;text-align: center">
+        <div style="font-weight: bold">Current Co-ordinates: <span id="co-ords">0 , 0</span></div>
+        <div style="margin-top: 15px;">
+            <input id="query" style="display: inline-block;min-width:25%;border: none;background: none;border-bottom: 2px solid grey;color: white;border-radius: 20px;padding: 5 15 5 15;font-size: 18;text-align: center" placeholder="Enter a Query">
+            <button id="enterbtn" style="display: inline-block;margin-left: 10px;background: none;border: 2px solid white;border-radius: 20px;font-size: 20px;padding: 15px;color: white;margin-left: 15px;transition: 0.1s;cursor: pointer"> ENTER </button>
+        </div>
+        </div>
+        <script src="static/hello.js"></script>
+    </div>
+</body>
+
+</html>

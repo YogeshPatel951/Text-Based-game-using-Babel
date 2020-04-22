@@ -1,0 +1,31 @@
+{
+  "name": "module",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "bundle-js": "browserify lib/hello.js > static/hello.js",
+    "build-js": "babel src -d lib --source-maps",
+    "flow": "flow",
+    "build": "npm run build-js && npm run bundle-js"
+  },
+  "keywords": [
+    "es6",
+    "es2020",
+    "demo"
+  ],
+  "author": "Yogesh PAtel",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.5.1",
+    "flow-bin": "^0.122.0"
+  },
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-polyfill": "^6.26.0"
+  }
+}
